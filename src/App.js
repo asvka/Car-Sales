@@ -15,7 +15,7 @@ const App = ({additionalPrice, car, additionalFeatures, addFeature, removeFeatur
         <AddedFeatures car={car} />
       </div>
       <div className="box">
-        <AdditionalFeatures additionalFeatures={additionalFeatures} />
+        <AdditionalFeatures additionalFeatures={additionalFeatures} addFeature={addFeature} />
         <Total car={car} additionalPrice={additionalPrice} />
       </div>
     </div>
