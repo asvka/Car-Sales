@@ -1,7 +1,7 @@
 import { ADD_FEATURE, REMOVE_FEATURE } from '../actions/Features';
 
 export const initialState = {
-    additionalPrice = 0,
+    additionalPrice: 0,
     car: {
         price: 26395,
         name: '2019 Ford Mustang',
@@ -23,8 +23,11 @@ export const reducer = (state = initialState, action) => {
         case "ADD_FEATURE":
         return {
             ...state,
-
         }
+        case "REMOVE_FEATURE":
+            return{
+                ...state,
+            }
     default:
     return state;
     }
